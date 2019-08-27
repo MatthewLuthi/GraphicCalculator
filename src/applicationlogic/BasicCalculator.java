@@ -3,6 +3,7 @@ package applicationlogic;
 public class BasicCalculator implements Calculator {
 
     private int value;
+    //private int result;
 
     public BasicCalculator() {
         value = 0;
@@ -15,6 +16,16 @@ public class BasicCalculator implements Calculator {
 
     @Override
     public void subtract(int n) {
+        value -= n;
+    }
+
+    @Override
+    public void multiply(int n) {
+        value *= n;
+    }
+
+    @Override
+    public void divide(int n) {
         value -= n;
     }
 

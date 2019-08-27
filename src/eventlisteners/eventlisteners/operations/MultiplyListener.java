@@ -1,9 +1,9 @@
-package eventlisteners;
+package eventlisteners.eventlisteners.operations;
 
 import applicationlogic.Calculator;
+import eventlisteners.ButtonListener;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 
 public class MultiplyListener extends ButtonListener {
@@ -14,7 +14,7 @@ public class MultiplyListener extends ButtonListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        int value = validateInput();
-        //getCalculator().subtract(value);
+        //getNumberField().setText(getNumberField().getText() + e.getActionCommand());
+        getCalculator().multiply(getNumericInput());
     }
 }

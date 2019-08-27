@@ -3,6 +3,9 @@ package ui;
 import applicationlogic.Calculator;
 import eventlisteners.ClearListener;
 import eventlisteners.NumberListener;
+import eventlisteners.eventlisteners.operations.AddListener;
+import eventlisteners.eventlisteners.operations.MultiplyListener;
+import eventlisteners.eventlisteners.operations.SubtractListener;
 import ui.ui.panels.AlphanumericPanel;
 import ui.ui.panels.OperationsPanel;
 
@@ -18,6 +21,7 @@ public class GraphicCalculator implements Runnable {
     private Calculator calculator;
 
     private JTextField numberField;
+    private JTextField resultField;
     private OperationsPanel operationsPanel;
     private AlphanumericPanel alphanumericPanel;
 
@@ -40,14 +44,10 @@ public class GraphicCalculator implements Runnable {
     }
 
     private void createComponents(Container container) {
-//        operationsPanel = new OperationsPanel();
-//        operationsPanel.getAddButton().addActionListener(new AddListener(calculator, numberField));
-//        operationsPanel.getSubtractButton().addActionListener(new SubtractListener(calculator, numberField));
-
         container.setLayout(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
 
-        numberField = new JTextField("0");
+        numberField = new JTextField("");
         c.fill = GridBagConstraints.BOTH;
         c.weightx = 0.5;
         c.gridwidth = 2;
@@ -55,24 +55,38 @@ public class GraphicCalculator implements Runnable {
         c.gridy = 0;
         container.add(numberField, c);
 
-        alphanumericPanel = initNumericPanel();
+        initResultField();
+        c.fill = GridBagConstraints.BOTH;
+        c.weightx = 0.5;
+        c.gridwidth = 2;
+        c.gridx = 0;
+        c.gridy = 1;
+        container.add(resultField, c);
+
+        initNumericPanel();
         c.fill = GridBagConstraints.BOTH;
         c.weightx = 0.5;
         c.gridwidth = 1;
         c.gridx = 0;
-        c.gridy = 1;
+        c.gridy = 2;
         container.add(alphanumericPanel, c);
 
-        operationsPanel = new OperationsPanel();
+        initOperationsPanel();
         c.fill = GridBagConstraints.BOTH;
         c.weightx = 0.5;
         c.gridwidth = 1;
         c.gridx = 1;
-        c.gridy = 1;
+        c.gridy = 2;
         container.add(operationsPanel, c);
     }
 
-    private AlphanumericPanel initNumericPanel() {
+    private void initResultField() {
+        resultField = new JTextField("");
+        resultField.setFont(resultField.getFont().deriveFont(Font.BOLD, 25));
+        resultField.setHorizontalAlignment(SwingConstants.RIGHT);
+    }
+
+    private void initNumericPanel() {
         alphanumericPanel = new AlphanumericPanel();
 
         for (JButton button : alphanumericPanel.getNumberPad()) {
@@ -80,8 +94,14 @@ public class GraphicCalculator implements Runnable {
         }
 
         alphanumericPanel.getClearButton().addActionListener(new ClearListener(calculator, numberField));
+    }
 
-        return alphanumericPanel;
+    private void initOperationsPanel() {
+        operationsPanel = new OperationsPanel();
+
+        operationsPanel.getAddButton().addActionListener(new AddListener(calculator, numberField));
+        operationsPanel.getMultiplyButton().addActionListener(new MultiplyListener(calculator, numberField));
+        operationsPanel.getSubtractButton().addActionListener(new SubtractListener(calculator, numberField));
     }
 
     public JFrame getFrame() {

@@ -21,7 +21,8 @@ public class ButtonListener implements ActionListener {
         numberField.setText("");
     }
 
-    protected int validateInput() {
+    //TODO: problematic to operational listeners (numberformat exception when writing x,+,-,/...
+    protected int getNumericInput() {
         try {
             return Integer.parseInt(numberField.getText());
         } catch (NumberFormatException e) {
