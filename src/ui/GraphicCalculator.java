@@ -2,11 +2,15 @@ package ui;
 
 import applicationlogic.Calculator;
 import eventlisteners.AddListener;
+import eventlisteners.NumberListener;
 import eventlisteners.SubtractListener;
 
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Display text and graphics in Java (Add images to buttons)
+ */
 public class GraphicCalculator implements Runnable {
 
     private JFrame frame;
@@ -51,6 +55,9 @@ public class GraphicCalculator implements Runnable {
         container.add(numberField, c);
 
         numericPanel = new NumericPanel();
+        for (JButton button : numericPanel.getNumberPad()) {
+            button.addActionListener(new NumberListener(calculator, numberField));
+        }
         c.fill = GridBagConstraints.BOTH;
         c.weightx = 0.5;
         c.gridwidth = 1;
