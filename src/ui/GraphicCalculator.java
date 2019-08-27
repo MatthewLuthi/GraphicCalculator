@@ -1,9 +1,10 @@
 package ui;
 
 import applicationlogic.Calculator;
-import eventlisteners.AddListener;
+import eventlisteners.ClearListener;
 import eventlisteners.NumberListener;
-import eventlisteners.SubtractListener;
+import ui.ui.panels.AlphanumericPanel;
+import ui.ui.panels.OperationsPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -18,7 +19,7 @@ public class GraphicCalculator implements Runnable {
 
     private JTextField numberField;
     private OperationsPanel operationsPanel;
-    private NumericPanel numericPanel;
+    private AlphanumericPanel alphanumericPanel;
 
 
     public GraphicCalculator(Calculator calculator) {
@@ -54,16 +55,13 @@ public class GraphicCalculator implements Runnable {
         c.gridy = 0;
         container.add(numberField, c);
 
-        numericPanel = new NumericPanel();
-        for (JButton button : numericPanel.getNumberPad()) {
-            button.addActionListener(new NumberListener(calculator, numberField));
-        }
+        alphanumericPanel = initNumericPanel();
         c.fill = GridBagConstraints.BOTH;
         c.weightx = 0.5;
         c.gridwidth = 1;
         c.gridx = 0;
         c.gridy = 1;
-        container.add(numericPanel, c);
+        container.add(alphanumericPanel, c);
 
         operationsPanel = new OperationsPanel();
         c.fill = GridBagConstraints.BOTH;
@@ -72,6 +70,18 @@ public class GraphicCalculator implements Runnable {
         c.gridx = 1;
         c.gridy = 1;
         container.add(operationsPanel, c);
+    }
+
+    private AlphanumericPanel initNumericPanel() {
+        alphanumericPanel = new AlphanumericPanel();
+
+        for (JButton button : alphanumericPanel.getNumberPad()) {
+            button.addActionListener(new NumberListener(calculator, numberField));
+        }
+
+        alphanumericPanel.getClearButton().addActionListener(new ClearListener(calculator, numberField));
+
+        return alphanumericPanel;
     }
 
     public JFrame getFrame() {

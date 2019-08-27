@@ -1,15 +1,16 @@
-package ui;
+package ui.ui.panels;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NumericPanel extends JPanel {
+public class AlphanumericPanel extends JPanel {
 
     private List<JButton> numberPad;
+    private JButton clearButton;
 
-    public NumericPanel() {
+    public AlphanumericPanel() {
         super(new GridBagLayout());
 
         numberPad = new ArrayList<JButton>();
@@ -18,23 +19,21 @@ public class NumericPanel extends JPanel {
 
     private void createComponents() {
         createNumberPad();
-        //setComponentBorders();
     }
 
     private void createNumberPad() {
         GridBagConstraints c = new GridBagConstraints();
 
-        JButton button = new JButton("C");
+        clearButton = new JButton("C");
         c.fill = GridBagConstraints.BOTH;
         c.weightx = 0.5;
         c.gridwidth = 3;
         c.gridx = 0;
         c.gridy = 0;
-        numberPad.add(button);
-        add(button, c);
+        add(clearButton, c);
 
 
-        button = new JButton("7");
+        JButton button = new JButton("7");
         c.fill = GridBagConstraints.BOTH;
         c.weightx = 0.5;
         c.gridwidth = 1;
@@ -134,11 +133,9 @@ public class NumericPanel extends JPanel {
         add(button, c);
     }
 
-//    private void setComponentBorders() {
-//        for (JButton button : numberPad) {
-//            button.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY));
-//        }
-//    }
+    public JButton getClearButton() {
+        return clearButton;
+    }
 
     public List<JButton> getNumberPad() {
         return numberPad;
