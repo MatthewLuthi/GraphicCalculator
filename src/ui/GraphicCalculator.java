@@ -14,6 +14,7 @@ public class GraphicCalculator implements Runnable {
 
     private JTextField numberField;
     private OperationsPanel operationsPanel;
+    private NumericPanel numericPanel;
 
 
     public GraphicCalculator(Calculator calculator) {
@@ -25,7 +26,7 @@ public class GraphicCalculator implements Runnable {
         frame = new JFrame();
         frame.setPreferredSize(new Dimension(230,320));
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setResizable(false);
+        frame.setResizable(true);
 
         createComponents(frame.getContentPane());
 
@@ -34,18 +35,36 @@ public class GraphicCalculator implements Runnable {
     }
 
     private void createComponents(Container container) {
-        container.setLayout(new GridLayout(2, 1));
+//        operationsPanel = new OperationsPanel();
+//        operationsPanel.getAddButton().addActionListener(new AddListener(calculator, numberField));
+//        operationsPanel.getSubtractButton().addActionListener(new SubtractListener(calculator, numberField));
+
+        container.setLayout(new GridBagLayout());
+        GridBagConstraints c = new GridBagConstraints();
 
         numberField = new JTextField("0");
-        numberField.setEnabled(false);
+        c.fill = GridBagConstraints.BOTH;
+        c.weightx = 0.5;
+        c.gridwidth = 2;
+        c.gridx = 0;
+        c.gridy = 0;
+        container.add(numberField, c);
+
+        numericPanel = new NumericPanel();
+        c.fill = GridBagConstraints.BOTH;
+        c.weightx = 0.5;
+        c.gridwidth = 1;
+        c.gridx = 0;
+        c.gridy = 1;
+        container.add(numericPanel, c);
 
         operationsPanel = new OperationsPanel();
-        operationsPanel.getAddButton().addActionListener(new AddListener(calculator, numberField));
-        operationsPanel.getSubtractButton().addActionListener(new SubtractListener(calculator, numberField));
-
-        container.add(numberField);
-        container.add(operationsPanel);
-        container.add(new NumericPanel());
+        c.fill = GridBagConstraints.BOTH;
+        c.weightx = 0.5;
+        c.gridwidth = 1;
+        c.gridx = 1;
+        c.gridy = 1;
+        container.add(operationsPanel, c);
     }
 
     public JFrame getFrame() {
