@@ -8,12 +8,17 @@ import java.awt.event.ActionEvent;
 
 public class ClearListener extends ButtonListener {
 
-    public ClearListener(Calculator calculator, JTextField numberField) {
+    private JTextField resultField;
+
+    public ClearListener(Calculator calculator, JTextField numberField, JTextField resultField) {
         super(calculator, numberField);
+        this.resultField = resultField;
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         getNumberField().setText("");
+        resultField.setText("");
+        getCalculator().clear();
     }
 }

@@ -2,7 +2,7 @@ package applicationlogic;
 
 public class BasicCalculator implements Calculator {
 
-    private int value;
+    private double value;
     //private int result;
 
     public BasicCalculator() {
@@ -10,27 +10,27 @@ public class BasicCalculator implements Calculator {
     }
 
     @Override
-    public void add(int n) {
+    public void add(double n) {
         value += n;
     }
 
     @Override
-    public void subtract(int n) {
+    public void subtract(double n) {
         value -= n;
     }
 
     @Override
-    public void multiply(int n) {
+    public void multiply(double n) {
         value *= n;
     }
 
     @Override
-    public void divide(int n) {
-        value -= n;
+    public void divide(double n) {
+        value /= n;
     }
 
     @Override
-    public int getValue() {
+    public double getValue() {
         return value;
     }
 

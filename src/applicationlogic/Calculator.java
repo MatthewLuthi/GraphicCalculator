@@ -2,10 +2,10 @@ package applicationlogic;
 
 public interface Calculator {
 
-    void add(int n);
-    void subtract(int n);
-    void multiply(int n);
-    void divide(int n);
-    int getValue();
+    void add(double n);
+    void subtract(double n);
+    void multiply(double n);
+    void divide(double n);
+    double getValue();
     void clear();
 }

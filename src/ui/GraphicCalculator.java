@@ -3,9 +3,7 @@ package ui;
 import applicationlogic.Calculator;
 import eventlisteners.ClearListener;
 import eventlisteners.NumberListener;
-import eventlisteners.eventlisteners.operations.AddListener;
-import eventlisteners.eventlisteners.operations.MultiplyListener;
-import eventlisteners.eventlisteners.operations.SubtractListener;
+import eventlisteners.eventlisteners.operations.*;
 import ui.ui.panels.AlphanumericPanel;
 import ui.ui.panels.OperationsPanel;
 
@@ -93,15 +91,17 @@ public class GraphicCalculator implements Runnable {
             button.addActionListener(new NumberListener(calculator, numberField));
         }
 
-        alphanumericPanel.getClearButton().addActionListener(new ClearListener(calculator, numberField));
+        alphanumericPanel.getClearButton().addActionListener(new ClearListener(calculator, numberField, resultField));
     }
 
     private void initOperationsPanel() {
         operationsPanel = new OperationsPanel();
 
         operationsPanel.getAddButton().addActionListener(new AddListener(calculator, numberField));
-        operationsPanel.getMultiplyButton().addActionListener(new MultiplyListener(calculator, numberField));
         operationsPanel.getSubtractButton().addActionListener(new SubtractListener(calculator, numberField));
+        operationsPanel.getMultiplyButton().addActionListener(new MultiplyListener(calculator, numberField));
+        operationsPanel.getDivideButton().addActionListener(new DivideListener(calculator, numberField));
+        operationsPanel.getEqualsButton().addActionListener(new EqualsListener(calculator, numberField, resultField));
     }
 
     public JFrame getFrame() {

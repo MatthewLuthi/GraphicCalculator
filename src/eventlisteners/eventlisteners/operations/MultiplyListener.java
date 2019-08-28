@@ -14,7 +14,8 @@ public class MultiplyListener extends ButtonListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        //getNumberField().setText(getNumberField().getText() + e.getActionCommand());
-        getCalculator().multiply(getNumericInput());
+        getCalculator().multiply(getLastEnteredNumericValue());
+        getNumberField().setText(getNumberField().getText() + e.getActionCommand());
+        System.out.println(getCalculator().getValue());
     }
 }

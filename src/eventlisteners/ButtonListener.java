@@ -21,14 +21,22 @@ public class ButtonListener implements ActionListener {
         numberField.setText("");
     }
 
-    //TODO: problematic to operational listeners (numberformat exception when writing x,+,-,/...
-    protected int getNumericInput() {
-        try {
-            return Integer.parseInt(numberField.getText());
-        } catch (NumberFormatException e) {
-            numberField.setText("");
-            return 0;
-         }
+//    protected int getNumericInput() {
+//        try {
+//            return Integer.parseInt(numberField.getText());
+//        } catch (NumberFormatException e) {
+//            numberField.setText("");
+//            return 0;
+//        }
+//    }
+
+    protected double getLastEnteredNumericValue() {
+        String[] numberGroupings = groupNumbersUsingOperationWildcards();
+        return Double.parseDouble(numberGroupings[numberGroupings.length - 1]);
+    }
+
+    private String[] groupNumbersUsingOperationWildcards() {
+        return numberField.getText().split("[^0-9.]");
     }
 
     public Calculator getCalculator() {

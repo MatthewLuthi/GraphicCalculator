@@ -14,7 +14,8 @@ public class SubtractListener extends ButtonListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        getCalculator().subtract(getLastEnteredNumericValue());
         getNumberField().setText(getNumberField().getText() + e.getActionCommand());
-        getCalculator().subtract(getNumericInput());
+        System.out.println(getCalculator().getValue());
     }
 }
