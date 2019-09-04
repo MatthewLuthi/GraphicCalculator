@@ -21,15 +21,6 @@ public class ButtonListener implements ActionListener {
         numberField.setText("");
     }
 
-//    protected int getNumericInput() {
-//        try {
-//            return Integer.parseInt(numberField.getText());
-//        } catch (NumberFormatException e) {
-//            numberField.setText("");
-//            return 0;
-//        }
-//    }
-
     protected double getLastEnteredNumericValue() {
         String[] numberGroupings = groupNumbersUsingOperationWildcards();
         return Double.parseDouble(numberGroupings[numberGroupings.length - 1]);
@@ -37,6 +28,10 @@ public class ButtonListener implements ActionListener {
 
     private String[] groupNumbersUsingOperationWildcards() {
         return numberField.getText().split("[^0-9.]");
+    }
+
+    protected boolean numberFieldContainsInitialNumber() {
+        return groupNumbersUsingOperationWildcards().length == 1;
     }
 
     public Calculator getCalculator() {

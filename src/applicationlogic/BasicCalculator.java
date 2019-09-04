@@ -3,7 +3,6 @@ package applicationlogic;
 public class BasicCalculator implements Calculator {
 
     private double value;
-    //private int result;
 
     public BasicCalculator() {
         value = 0;
