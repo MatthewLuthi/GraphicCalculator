@@ -1,5 +1,6 @@
 package eventlisteners.eventlisteners.operations;
 
+import applicationlogic.ArithmeticEvaluation;
 import applicationlogic.Calculator;
 import eventlisteners.ButtonListener;
 
@@ -17,6 +18,8 @@ public class EqualsListener extends ButtonListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        resultField.setText(Double.toString(getCalculator().getValue()));
+        double result = ArithmeticEvaluation.evaluateExpression(getNumberField().getText());
+        resultField.setText(Double.toString(result));
+        //resultField.setText(Double.toString(getCalculator().getValue()));
     }
 }

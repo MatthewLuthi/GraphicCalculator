@@ -18,7 +18,7 @@ public class ButtonListener implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        numberField.setText("");
+        numberField.setText(numberField.getText() + e.getActionCommand());
     }
 
     protected double getLastEnteredNumericValue() {
@@ -28,10 +28,6 @@ public class ButtonListener implements ActionListener {
 
     private String[] groupNumbersUsingOperationWildcards() {
         return numberField.getText().split("[^0-9.]");
-    }
-
-    protected boolean numberFieldContainsInitialNumber() {
-        return groupNumbersUsingOperationWildcards().length == 1;
     }
 
     public Calculator getCalculator() {

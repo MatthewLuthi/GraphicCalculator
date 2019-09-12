@@ -9,9 +9,4 @@ public class NumberListener extends ButtonListener {
     public NumberListener(Calculator calculator, JTextField numberField) {
         super(calculator, numberField);
     }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        getNumberField().setText(getNumberField().getText() + e.getActionCommand());
-    }
 }

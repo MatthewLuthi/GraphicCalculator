@@ -17,7 +17,7 @@ public class OperationsPanel extends JPanel {
     private void createComponents() {
         addButton = new JButton("+");
         subtractButton = new JButton("-");
-        multiplyButton = new JButton("x");
+        multiplyButton = new JButton("*");
         divideButton = new JButton("/");
         equalsButton = new JButton("=");
 

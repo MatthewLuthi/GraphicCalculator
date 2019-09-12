@@ -10,11 +10,4 @@ public class DivideListener extends ButtonListener {
     public DivideListener(Calculator calculator, JTextField numberField) {
         super(calculator, numberField);
     }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        getCalculator().divide(getLastEnteredNumericValue());
-        getNumberField().setText(getNumberField().getText() + e.getActionCommand());
-        System.out.println(getCalculator().getValue());
-    }
 }

@@ -11,15 +11,4 @@ public class MultiplyListener extends ButtonListener {
     public MultiplyListener(Calculator calculator, JTextField numberField) {
         super(calculator, numberField);
     }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        if (numberFieldContainsInitialNumber()) {
-            getCalculator().add(Double.parseDouble(getNumberField().getText()));
-        } else {
-            getCalculator().multiply(getLastEnteredNumericValue());
-
-        }
-        getNumberField().setText(getNumberField().getText() + e.getActionCommand());
-    }
 }

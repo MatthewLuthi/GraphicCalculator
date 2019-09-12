@@ -2,10 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adcedcca-635d-4ec5-a374-8e1ca8a02bd8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/applicationlogic/ArithmeticEvaluation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/LeftBracketListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/ui/panels/ExtendedOperationsPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CalculatorApp/applicationlogic/BasicCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalculatorApp/applicationlogic/BasicCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CalculatorApp/eventlisteners/ButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalculatorApp/eventlisteners/ButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CalculatorApp/eventlisteners/eventlisteners/operations/AddListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalculatorApp/eventlisteners/eventlisteners/operations/AddListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CalculatorApp/eventlisteners/eventlisteners/operations/DivideListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalculatorApp/eventlisteners/eventlisteners/operations/DivideListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CalculatorApp/eventlisteners/eventlisteners/operations/EqualsListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalculatorApp/eventlisteners/eventlisteners/operations/EqualsListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CalculatorApp/eventlisteners/eventlisteners/operations/MultiplyListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalculatorApp/eventlisteners/eventlisteners/operations/MultiplyListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CalculatorApp/eventlisteners/eventlisteners/operations/SubtractListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalculatorApp/eventlisteners/eventlisteners/operations/SubtractListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CalculatorApp/ui/ui/panels/OperationsPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalculatorApp/ui/ui/panels/OperationsPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/applicationlogic/BasicCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/applicationlogic/BasicCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/eventlisteners/ButtonListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eventlisteners/ButtonListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventlisteners/NumberListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eventlisteners/NumberListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/AddListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/AddListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/DivideListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/DivideListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/EqualsListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/EqualsListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/MultiplyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/MultiplyListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/SubtractListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/SubtractListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/GraphicCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/GraphicCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/ui/panels/OperationsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ui/panels/OperationsPanel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,10 +40,15 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/applicationlogic/BasicCalculator.java">
+            <entry file="file://$PROJECT_DIR$/src/eventlisteners/ButtonListener.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+                <state relative-caret-position="300">
+                  <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#508#509#0" expanded="true" />
+                    <element signature="e#547#548#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -33,8 +56,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/MultiplyListener.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="22" column="84" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
+                <state relative-caret-position="180">
+                  <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#315#316#0" expanded="true" />
@@ -45,74 +68,52 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/ui/ui/panels/ExtendedOperationsPanel.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="390">
+                  <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#694#695#0" expanded="true" />
+                    <element signature="e#734#735#0" expanded="true" />
+                    <element signature="e#769#770#0" expanded="true" />
+                    <element signature="e#807#808#0" expanded="true" />
+                    <element signature="e#840#841#0" expanded="true" />
+                    <element signature="e#876#877#0" expanded="true" />
+                    <element signature="e#907#908#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/ui/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/applicationlogic/BasicCalculator.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/DivideListener.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+                <state relative-caret-position="135">
+                  <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/ui/GraphicCalculator.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="140">
-                  <caret line="93" column="98" selection-start-line="93" selection-start-column="98" selection-end-line="93" selection-end-column="98" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/eventlisteners/ClearListener.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/ui/ui/panels/OperationsPanel.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/SubtractListener.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/EqualsListener.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#522#523#0" expanded="true" />
-                    <element signature="e#602#603#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -121,8 +122,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/AddListener.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="55" />
+                <state relative-caret-position="150">
+                  <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -142,28 +143,37 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/eventlisteners/ButtonListener.java">
+            <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/EqualsListener.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="319">
-                  <caret line="25" column="79" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
+                <state relative-caret-position="270">
+                  <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#508#509#0" expanded="true" />
-                    <element signature="e#547#548#0" expanded="true" />
-                    <element signature="e#1124#1125#0" expanded="true" />
-                    <element signature="e#1196#1197#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/eventlisteners/NumberListener.java">
+            <entry file="file://$PROJECT_DIR$/src/applicationlogic/ArithmeticEvaluation.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="14" column="84" lean-forward="true" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+                <state relative-caret-position="420">
+                  <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+                  <folding>
+                    <element signature="e#273#274#0" expanded="true" />
+                    <element signature="e#355#356#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/SubtractListener.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -172,10 +182,69 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/ui/GraphicCalculator.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="168">
+                  <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#807#808#0" expanded="true" />
+                    <element signature="e#851#852#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/LeftBracketListener.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/eventlisteners/ClearListener.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/eventlisteners/NumberListener.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/ui/ui/panels/AlphanumericPanel.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="412">
+                <state relative-caret-position="527">
                   <caret line="132" column="23" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/ui/ui/panels/OperationsPanel.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -214,22 +283,25 @@
         <option value="$PROJECT_DIR$/src/ui/OperationsPanel.java" />
         <option value="$PROJECT_DIR$/src/eventlisteners/NumberPanelListener.java" />
         <option value="$PROJECT_DIR$/src/eventlisteners/NumericPanelListener.java" />
-        <option value="$PROJECT_DIR$/src/eventlisteners/NumberListener.java" />
         <option value="$PROJECT_DIR$/src/ui/NumericPanel.java" />
         <option value="$PROJECT_DIR$/src/ui/AlphaNumericPanel.java" />
         <option value="$PROJECT_DIR$/src/ui/AlphanumericPanel.java" />
         <option value="$PROJECT_DIR$/src/ui/ui/panels/AlphanumericPanel.java" />
-        <option value="$PROJECT_DIR$/src/ui/ui/panels/OperationsPanel.java" />
-        <option value="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/AddListener.java" />
         <option value="$PROJECT_DIR$/src/applicationlogic/Calculator.java" />
-        <option value="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/DivideListener.java" />
-        <option value="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/SubtractListener.java" />
-        <option value="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/EqualsListener.java" />
         <option value="$PROJECT_DIR$/src/eventlisteners/ClearListener.java" />
-        <option value="$PROJECT_DIR$/src/ui/GraphicCalculator.java" />
-        <option value="$PROJECT_DIR$/src/eventlisteners/ButtonListener.java" />
-        <option value="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/MultiplyListener.java" />
+        <option value="$PROJECT_DIR$/src/eventlisteners/OrderOfOperations.java" />
+        <option value="$PROJECT_DIR$/src/applicationlogic/ArithmeticEvaluation.java" />
+        <option value="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/EqualsListener.java" />
+        <option value="$PROJECT_DIR$/src/ui/ui/panels/OperationsPanel.java" />
+        <option value="$PROJECT_DIR$/src/ui/ui/panels/ExtendedOperationsPanel.java" />
         <option value="$PROJECT_DIR$/src/applicationlogic/BasicCalculator.java" />
+        <option value="$PROJECT_DIR$/src/eventlisteners/ButtonListener.java" />
+        <option value="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/AddListener.java" />
+        <option value="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/MultiplyListener.java" />
+        <option value="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/SubtractListener.java" />
+        <option value="$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/DivideListener.java" />
+        <option value="$PROJECT_DIR$/src/eventlisteners/NumberListener.java" />
+        <option value="$PROJECT_DIR$/src/ui/GraphicCalculator.java" />
       </list>
     </option>
   </component>
@@ -239,9 +311,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1280" />
-    <option name="y" value="23" />
+    <option name="y" value="60" />
     <option name="width" value="1920" />
     <option name="height" value="777" />
   </component>
@@ -350,7 +422,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="23" width="1920" height="777" extended-state="0" />
+    <frame x="1280" y="23" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11341853" />
@@ -362,7 +434,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3138686" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22279793" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -388,30 +460,28 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/applicationlogic.java" />
     <entry file="file://$PROJECT_DIR$/src/eventlisteners/NumericPanelListener.java" />
-    <entry file="file://$PROJECT_DIR$/src/ui/Main.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/lang/NumberFormatException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="307">
+          <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eventlisteners/OrderOfOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/DivideListener.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/ui/panels/AlphanumericPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eventlisteners/ClearListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        <state relative-caret-position="527">
+          <caret line="132" column="23" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -420,8 +490,96 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/ui/panels/OperationsPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="285">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/ui/panels/ExtendedOperationsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#807#808#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/applicationlogic/ArithmeticEvaluation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+          <folding>
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/AddListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/EqualsListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/DivideListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eventlisteners/NumberListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eventlisteners/ClearListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -430,50 +588,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/SubtractListener.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/MultiplyListener.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/GraphicCalculator.java">
+    <entry file="file://$PROJECT_DIR$/src/applicationlogic/BasicCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="93" column="98" selection-start-line="93" selection-start-column="98" selection-end-line="93" selection-end-column="98" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/lang/NumberFormatException.java">
+    <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/LeftBracketListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/EqualsListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/AddListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -486,54 +631,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/eventlisteners/ButtonListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="25" column="79" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
+        <state relative-caret-position="300">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#508#509#0" expanded="true" />
             <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eventlisteners/NumberListener.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/GraphicCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="84" lean-forward="true" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+        <state relative-caret-position="168">
+          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#807#808#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ui/panels/AlphanumericPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="132" column="23" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eventlisteners/eventlisteners/operations/MultiplyListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="84" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/applicationlogic/BasicCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
         </state>
       </provider>
     </entry>

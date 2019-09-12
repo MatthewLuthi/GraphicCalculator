@@ -5,6 +5,7 @@ import eventlisteners.ClearListener;
 import eventlisteners.NumberListener;
 import eventlisteners.eventlisteners.operations.*;
 import ui.ui.panels.AlphanumericPanel;
+import ui.ui.panels.ExtendedOperationsPanel;
 import ui.ui.panels.OperationsPanel;
 
 import javax.swing.*;
@@ -22,6 +23,7 @@ public class GraphicCalculator implements Runnable {
     private JTextField resultField;
     private OperationsPanel operationsPanel;
     private AlphanumericPanel alphanumericPanel;
+    private ExtendedOperationsPanel extendedOperationsPanel;
 
 
     public GraphicCalculator(Calculator calculator) {
@@ -102,6 +104,10 @@ public class GraphicCalculator implements Runnable {
         operationsPanel.getMultiplyButton().addActionListener(new MultiplyListener(calculator, numberField));
         operationsPanel.getDivideButton().addActionListener(new DivideListener(calculator, numberField));
         operationsPanel.getEqualsButton().addActionListener(new EqualsListener(calculator, numberField, resultField));
+    }
+
+    private void initExtendedOperationsPanel() {
+
     }
 
     public JFrame getFrame() {
