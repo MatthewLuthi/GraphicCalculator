@@ -1,6 +1,5 @@
 package ui;
 
-import applicationlogic.Calculator;
 import eventlisteners.ClearListener;
 import eventlisteners.NumberListener;
 import eventlisteners.eventlisteners.operations.*;
@@ -17,18 +16,12 @@ import java.awt.*;
 public class GraphicCalculator implements Runnable {
 
     private JFrame frame;
-    private Calculator calculator;
 
     private JTextField numberField;
     private JTextField resultField;
     private OperationsPanel operationsPanel;
     private AlphanumericPanel alphanumericPanel;
     private ExtendedOperationsPanel extendedOperationsPanel;
-
-
-    public GraphicCalculator(Calculator calculator) {
-        this.calculator = calculator;
-    }
 
     @Override
     public void run() {
@@ -90,20 +83,20 @@ public class GraphicCalculator implements Runnable {
         alphanumericPanel = new AlphanumericPanel();
 
         for (JButton button : alphanumericPanel.getNumberPad()) {
-            button.addActionListener(new NumberListener(calculator, numberField));
+            button.addActionListener(new NumberListener(numberField));
         }
 
-        alphanumericPanel.getClearButton().addActionListener(new ClearListener(calculator, numberField, resultField));
+        alphanumericPanel.getClearButton().addActionListener(new ClearListener(numberField, resultField));
     }
 
     private void initOperationsPanel() {
         operationsPanel = new OperationsPanel();
 
-        operationsPanel.getAddButton().addActionListener(new AddListener(calculator, numberField));
-        operationsPanel.getSubtractButton().addActionListener(new SubtractListener(calculator, numberField));
-        operationsPanel.getMultiplyButton().addActionListener(new MultiplyListener(calculator, numberField));
-        operationsPanel.getDivideButton().addActionListener(new DivideListener(calculator, numberField));
-        operationsPanel.getEqualsButton().addActionListener(new EqualsListener(calculator, numberField, resultField));
+        operationsPanel.getAddButton().addActionListener(new AddListener(numberField));
+        operationsPanel.getSubtractButton().addActionListener(new SubtractListener(numberField));
+        operationsPanel.getMultiplyButton().addActionListener(new MultiplyListener(numberField));
+        operationsPanel.getDivideButton().addActionListener(new DivideListener(numberField));
+        operationsPanel.getEqualsButton().addActionListener(new EqualsListener(numberField, resultField));
     }
 
     private void initExtendedOperationsPanel() {
